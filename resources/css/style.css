@@ -1,3 +1,7 @@
+/*-----------------------------------------------------------------------------------
+COPY TO LABEL SECTIONS
+-------------------------------------------------------------------------------------*/
+
 * {
   margin: 0;
   padding: 0;
@@ -18,6 +22,10 @@ html {
   margin: 0 auto 0 auto;
 }
 
+/*-----------------------------------------------------------------------------------
+HEADER 
+-------------------------------------------------------------------------------------*/
+
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.699), rgba(0, 0, 0, 0.699)),
     url(img/The\ Western\ Collectives.jpg);
@@ -35,5 +43,59 @@ header {
 }
 
 h1 {
-  margin: 0;
+  margin: 0 0 20px 0;
+  color: rgb(255, 255, 255);
+  font-size: 150%;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  word-spacing: 4px;
 }
+
+/*-----------------------------------------------------------------------------------
+BUTTONS
+-------------------------------------------------------------------------------------*/
+
+.button:link,
+.button:visited {
+  display: inline-block;
+  padding: 10px 30px 10px 30px;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 100px;
+  transition: background-color 0.3s, border 0.3s, color 0.3s;
+}
+
+.full:link,
+.full:visited {
+  background-color: #009432;
+  border: 1px soild #009432;
+  color: rgb(255, 255, 255);
+  margin: 0 15px 0 0;
+}
+
+.empty:link,
+.empty:visited {
+  border: 1px solid #009432;
+  color: rgb(255, 255, 255);
+}
+
+.button:hover,
+.button:active {
+  background-color: #007227;
+}
+
+.full:hover,
+.full:active {
+  border: 1px soild #007227;
+}
+
+.empty:hover,
+.empty:active {
+  border: 1px solid #007227;
+  color: rgb(255, 255, 255);
+}
+
+/*-----------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------------*/
