@@ -1,6 +1,8 @@
-/*-----------------------------------------------------------------------------------
-COPY TO LABEL SECTIONS
--------------------------------------------------------------------------------------*/
+/*----------------------------------------/
+/-----------                   -----------/
+/----------------------------------------*/
+
+/*----------                   ----------*/
 
 * {
   margin: 0;
@@ -17,31 +19,19 @@ html {
   text-rendering: optimizeLegibility;
 }
 
+/*----------------------------------------/
+/-----------REUSABLE COMPONENTS-----------/
+/----------------------------------------*/
 .row {
   max-width: 1140px;
   margin: 0 auto 0 auto;
 }
 
-/*-----------------------------------------------------------------------------------
-HEADER 
--------------------------------------------------------------------------------------*/
-
-header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.699), rgba(0, 0, 0, 0.699)),
-    url(img/The\ Western\ Collectives.jpg);
-  height: 100vh;
-  background-size: contain;
-  background-position: center;
+.material-icons {
+  font-size: 24px;
 }
 
-.home-page {
-  position: absolute;
-  width: 1140px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
+/*----------------HEADING----------------*/
 h1 {
   margin: 0 0 20px 0;
   color: rgb(255, 255, 255);
@@ -52,9 +42,7 @@ h1 {
   word-spacing: 4px;
 }
 
-/*-----------------------------------------------------------------------------------
-BUTTONS
--------------------------------------------------------------------------------------*/
+/*----------------BUTTONS----------------*/
 
 .button:link,
 .button:visited {
@@ -87,15 +75,65 @@ BUTTONS
 
 .full:hover,
 .full:active {
-  border: 1px soild #007227;
+  border: 2px soild #007227;
 }
 
 .empty:hover,
 .empty:active {
-  border: 1px solid #007227;
+  border: 2px solid #007227;
   color: rgb(255, 255, 255);
 }
 
-/*-----------------------------------------------------------------------------------
+/*----------------------------------------/
+/------------------HEADER-----------------/
+/----------------------------------------*/
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.699), rgba(0, 0, 0, 0.699)),
+    url(img/Background1.jpg);
+  height: 100vh;
+  background-size: contain;
+  background-position: center;
+}
 
--------------------------------------------------------------------------------------*/
+.home-page {
+  position: absolute;
+  width: 1140px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.logo {
+  height: 100px;
+  width: auto;
+  float: left;
+}
+
+/*--------------MAIN NAVBAR--------------*/
+.main-nav {
+  float: right;
+  list-style: none;
+  margin: 35px 0 0 0;
+}
+
+.main-nav li {
+  display: inline;
+  margin: 0 0 0 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+  color: white;
+  padding: 5px 0 5px 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 90%;
+  word-spacing: 4px;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.3s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+  border-bottom: 2px solid #007227;
+}
