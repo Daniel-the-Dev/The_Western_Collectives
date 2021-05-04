@@ -47,7 +47,7 @@ h3 {
 h1 {
   margin-bottom: 25px;
   color: rgb(255, 255, 255);
-  font-size: 150%;
+  font-size: 180%;
   word-spacing: 4px;
 }
 
@@ -187,4 +187,48 @@ header {
 .main-nav li a:hover,
 .main-nav li a:active {
   border-bottom: 2px solid #007227;
+}
+
+/*----------------------------------------/
+/------------------FEATURES---------------/
+/----------------------------------------*/
+.section-one long-copy {
+  margin-bottom: 30px;
+}
+
+/*----------------------------------------/
+/------------------GALLERY----------------/
+/----------------------------------------*/
+.section-two {
+  padding: 0;
+}
+
+.gallery {
+  list-style: none;
+  width: 100%;
+}
+.gallery li {
+  display: block;
+  float: left;
+  width: 25%;
+}
+
+.gallery-photo {
+  width: 100%;
+  margin-bottom: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+.gallery-photo img {
+  opacity: 0.4;
+  width: 100%;
+  height: auto;
+  transform: scale(1.15);
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.gallery-photo img:hover {
+  opacity: 1;
+  transform: scale(1.03);
 }
