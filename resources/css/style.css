@@ -12,7 +12,7 @@
 
 html {
   background-color: black;
-  color: rgb(141, 138, 138);
+  color: white;
   font-family: "lato", sans-serif, arial;
   font-size: 20px;
   font-weight: 300;
@@ -34,6 +34,7 @@ html {
 /*----------------------------------------/
 /-----------REUSABLE COMPONENTS-----------/
 /----------------------------------------*/
+
 .row {
   max-width: 1140px;
   margin: 0 auto 0 auto;
@@ -48,6 +49,7 @@ section {
 }
 
 /*----------------HEADING----------------*/
+
 h1,
 h2,
 h3 {
@@ -84,6 +86,7 @@ h3 {
   font-size: 110%;
   margin-bottom: 15px;
 }
+
 /*----------------BUTTONS----------------*/
 
 .button:link,
@@ -127,6 +130,7 @@ h3 {
 }
 
 /*---------------PARAGRAPHS--------------*/
+
 .long-copy {
   line-height: 145%;
   width: 70%;
@@ -140,6 +144,7 @@ h3 {
 }
 
 /*------------------ICONS----------------*/
+
 .icon-big {
   font-size: 325%;
   display: block;
@@ -160,6 +165,7 @@ h3 {
 }
 
 /*------------------LINKS----------------*/
+
 a:link,
 a:visited {
   color: #009432;
@@ -178,12 +184,14 @@ a:active {
 /*----------------------------------------/
 /------------------HEADER-----------------/
 /----------------------------------------*/
+
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.699), rgba(0, 0, 0, 0.699)),
     url(img/Background1.jpg);
   height: 100vh;
   background-size: contain;
   background-position: center;
+  background-attachment: fixed;
 }
 
 .home-page {
@@ -201,6 +209,7 @@ header {
 }
 
 /*--------------MAIN NAVBAR--------------*/
+
 .main-nav {
   float: right;
   list-style: none;
@@ -232,6 +241,7 @@ header {
 /*----------------------------------------/
 /------------------FEATURES---------------/
 /----------------------------------------*/
+
 .section-one long-copy {
   margin-bottom: 30px;
 }
@@ -239,6 +249,7 @@ header {
 /*----------------------------------------/
 /------------------GALLERY----------------/
 /----------------------------------------*/
+
 .section-two {
   padding: 0;
 }
@@ -334,6 +345,7 @@ header {
 /*----------------------------------------/
 /------------------CITIES-----------------/
 /----------------------------------------*/
+
 .box img {
   height: auto;
   width: 100%;
@@ -343,3 +355,110 @@ header {
 .cities {
   margin-bottom: 5px;
 }
+
+/*----------------------------------------/
+/---------------TESTIMONIALS--------------/
+/----------------------------------------*/
+
+.section-five {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.705), rgba(0, 0, 0, 0.705)),
+    url(/resources/css/img/Background2.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  background-attachment: fixed;
+}
+
+blockquote::before {
+  content: "\0022";
+  display: block;
+  font-size: 500%;
+  position: absolute;
+  top: -5px;
+  left: -10px;
+}
+
+blockquote {
+  padding: 2%;
+  font-style: italic;
+  line-height: 145%;
+  position: relative;
+  margin-top: 40px;
+}
+
+cite {
+  font-size: 90%;
+  margin-top: 25px;
+  display: block;
+}
+
+cite img {
+  height: 45px;
+  border-radius: 50%;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+/*----------------------------------------/
+/-----------------SIGN UP-----------------/
+/----------------------------------------*/
+
+.section-six {
+  background-color: rgb(8, 8, 8);
+}
+
+.plan-box {
+  background-color: rgb(17, 17, 17);
+  border-radius: 5px;
+  width: 90%;
+  margin-left: 5%;
+  box-shadow: 0 3px 3px rgb(100, 100, 100);
+}
+
+.plan-box div {
+  padding: 15px;
+  border-bottom: 1px solid #00722849;
+}
+
+.plan-box div:first-child {
+  background-color: rgb(27, 27, 27);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.plan-box div:last-child {
+  text-align: center;
+  border: none;
+}
+
+.plan-price {
+  font-size: 300%;
+  margin-bottom: 10px;
+  font-weight: 100;
+  color: #009432;
+}
+
+.plan-price span {
+  font-size: 30%;
+  font-weight: 300;
+}
+
+.plan-price-cost {
+  font-size: 80%;
+}
+
+.plan-box ul {
+  list-style: none;
+}
+
+.plan-box ul li {
+  padding: 5px 0;
+}
+
+/*----------------------------------------/
+/-----------------CONTACT-----------------/
+/----------------------------------------*/
+
+/*----------------------------------------/
+/-----------------FOOTER-----------------/
+/----------------------------------------*/
