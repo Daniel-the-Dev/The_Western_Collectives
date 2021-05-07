@@ -537,10 +537,10 @@ footer-nav {
   color: white;
 }
 
-.ion-social-facebook-outline,
+.ion-social-twitch-outline,
 .ion-social-instagram-outline,
 .ion-social-linkedin-outline,
-.ion-social-twitter-outline {
+.ion-social-github-outline {
   font-size: 135%;
   transition: color 0.2s;
 }
@@ -549,12 +549,12 @@ footer-nav {
   color: #4c68d7;
 }
 
-.ion-social-twitter-outline:hover {
-  color: #1da1f2;
+.ion-social-github-outline:hover {
+  color: #ffffff;
 }
 
-.ion-social-facebook-outline:hover {
-  color: #3b5998;
+.ion-social-twitch-outline:hover {
+  color: #6441a5;
 }
 
 .ion-social-linkedin-outline:hover {
