@@ -90,7 +90,8 @@ h3 {
 /*----------------BUTTONS----------------*/
 
 .button:link,
-.button:visited {
+.button:visited,
+input[type="submit"] {
   display: inline-block;
   padding: 10px 30px;
   font-weight: 300;
@@ -100,7 +101,8 @@ h3 {
 }
 
 .full:link,
-.full:visited {
+.full:visited,
+input[type="submit"] {
   background-color: #009432;
   border: 1px soild #009432;
   color: rgb(255, 255, 255);
@@ -114,12 +116,15 @@ h3 {
 }
 
 .button:hover,
-.button:active {
+.button:active,
+input[type="submit"]:hover,
+input[type="submit"]:active {
   background-color: #007227;
 }
 
 .full:hover,
-.full:active {
+.full:active,
+input[type="submit"] {
   border: 2px soild #007227;
 }
 
@@ -459,6 +464,105 @@ cite img {
 /-----------------CONTACT-----------------/
 /----------------------------------------*/
 
+.form {
+  width: 60%;
+  margin: 0 auto;
+}
+
+input [type="text"],
+input [type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 7px;
+  border-radius: 3px;
+  border: 1px solid #009432;
+}
+
+textarea {
+  height: 100px;
+}
+
+input[type="checkbox"] {
+  margin: 10px 5px 10px 0;
+}
+
+*:focus {
+  outline: none;
+}
+
 /*----------------------------------------/
 /-----------------FOOTER-----------------/
 /----------------------------------------*/
+
+footer {
+  background-color: rgb(27, 27, 27);
+  padding: 5px;
+  font-size: 80%;
+}
+
+footer-nav {
+  list-style: none;
+  float: left;
+}
+
+.social-links {
+  list-style: none;
+  float: right;
+}
+
+.footer-nav li,
+.social-links li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+  margin-right: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+  text-decoration: none;
+  border: 0;
+  color: rgba(0, 0, 0, 0.705);
+  transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+  color: white;
+}
+
+.ion-social-facebook-outline,
+.ion-social-instagram-outline,
+.ion-social-linkedin-outline,
+.ion-social-twitter-outline {
+  font-size: 135%;
+  transition: color 0.2s;
+}
+
+.ion-social-instagram-outline:hover {
+  color: #4c68d7;
+}
+
+.ion-social-twitter-outline:hover {
+  color: #1da1f2;
+}
+
+.ion-social-facebook-outline:hover {
+  color: #3b5998;
+}
+
+.ion-social-linkedin-outline:hover {
+  color: #0077b5;
+}
+
+footer p {
+  color: rgba(0, 0, 0, 0.705);
+  text-align: center;
+  margin-top: 50px;
+}
