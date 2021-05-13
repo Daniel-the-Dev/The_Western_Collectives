@@ -8,6 +8,10 @@
   .form {
     width: 100%;
   }
+
+  .icon-big {
+    font-size: 250%;
+  }
 }
 
 /*---SMALL PHONES TO SMALL TABLETS---*/
@@ -70,6 +74,10 @@
 
   .app {
     width: 40%;
+  }
+
+  .icon-big {
+    font-size: 250%;
   }
 }
 
