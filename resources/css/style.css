@@ -209,8 +209,15 @@ header {
   transform: translate(-50%, -50%);
 }
 
-.logo {
+.logo-white {
   height: 100px;
+  width: auto;
+  float: left;
+}
+
+.logo-black {
+  display: none;
+  height: 50px;
   width: auto;
   float: left;
 }
@@ -243,6 +250,34 @@ header {
 .main-nav li a:hover,
 .main-nav li a:active {
   border-bottom: 2px solid #007227;
+}
+
+/*-------------STICKY NAVBAR-------------*/
+.sticky-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.74);
+  box-shadow: 0 2px 2px rgb(138, 138, 138);
+}
+
+.sticky-nav li a:link,
+.sticky-nav li a:visited {
+  color: rgb(0, 0, 0);
+  padding: 15px 0;
+}
+
+.sticky-nav .logo-white {
+  display: none;
+}
+
+.sticky-nav .logo-black {
+  display: block;
+}
+
+.main-nav {
+  margin-top: 15px;
 }
 
 /*----------------------------------------/
